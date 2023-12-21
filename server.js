@@ -6,7 +6,7 @@ const app=express();
 
 const BASE_URL=process.env.BASE_URL;
 
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT ;
 
 // let's tackle cors
 const corsOptions = {
@@ -36,8 +36,8 @@ app.use("/api/form",contactRoute)
 app.use(errorMiddleware);
 
 connectDb().then(()=>{
-    app.listen(PORT,()=>{
-        console.log(`server is running at ${PORT}`);
-    });
-    // app.listen();
+    // app.listen(PORT,()=>{
+    //     console.log(`server is running at ${PORT}`);
+    // });
+    app.listen();
 });
