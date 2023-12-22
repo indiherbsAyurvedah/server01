@@ -6,11 +6,12 @@ const app=express();
 
 // const BASE_URL=process.env.BASE_URL;
 
-// const PORT=process.env.PORT ;
+const PORT=process.env.PORT || 5000 ;
 
 // let's tackle cors
 const corsOptions = {
-    origin: 'https://www.indiherbs.com',
+    // origin: 'https://www.indiherbs.com',
+    origin: 'http://localhost:5173',
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     credential:true,
   };
