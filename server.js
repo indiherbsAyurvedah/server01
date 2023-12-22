@@ -37,8 +37,8 @@ app.use("/api/form",contactRoute)
 app.use(errorMiddleware);
 
 connectDb().then(()=>{
-    // app.listen(PORT,()=>{
-    //     console.log(`server is running at ${PORT}`);
-    // });
-    app.listen();
+    app.listen(PORT,()=>{
+        console.log(`server is running at ${PORT}`);
+    });
+    // app.listen();
 });
