@@ -11,12 +11,13 @@ const PORT=process.env.PORT ;
 // let's tackle cors
 const corsOptions = {
     origin: 'https://www.indiherbs.com',
+    "Access-Control-Allow-Origin": 'https://www.indiherbs.com',
     
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     // credential:true,
     credentials: true,
   };
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 // const router=require("./router/auth-router");
 const authRoute=require("./router/auth-router");
