@@ -10,7 +10,8 @@ const PORT=process.env.PORT ;
 
 // let's tackle cors
 const corsOptions = {
-    origin: 'https://www.indiherbs.com/',
+    // origin: 'https://www.indiherbs.com',
+    origin: "https://www.indiherbs.com",
     
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
     // credential:true,
