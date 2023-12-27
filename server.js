@@ -10,7 +10,7 @@ const PORT=process.env.PORT ;
 
 // let's tackle cors
 const corsOptions = {
-    origin: 'https://www.indiherbs.com',
+    origin: 'https://mernbackend05.onrender.com',
     
     
     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
@@ -18,11 +18,7 @@ const corsOptions = {
     credentials: true,
   };
 
-//   app.use(cors({
-//     origin:'https://www.indiherbs.com',
-//     methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
-//     credentials: true,
-//   }));
+
 
 app.use(cors(corsOptions));
 app.use(express.json());
