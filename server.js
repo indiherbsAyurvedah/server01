@@ -13,7 +13,8 @@ const corsOptions = {
     origin: 'https://www.indiherbs.com',
     
     
-    methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
+    methods:["GET,POST,PUT,DELETE,PATCH,HEAD"],
+    allowedHeaders: ['Content-Type', 'Authorization'],
     // credential:true,
     credentials: true,
   };
